@@ -37,11 +37,16 @@ form label input {
 
     height: 1rem;
     padding: 1rem;
+    border: 1px solid transparent;
     border-radius: 0.2rem;
     margin-left: 0.5rem;
     
     outline: none;
     background-color: rgba(12, 12, 12, 0.10);
+}
+
+form label input:hover {
+    border: 1px solid rgba(12, 12, 12, 0.212);
 }
 
 form div.buttonArea {
@@ -53,6 +58,8 @@ form div.buttonArea {
 }
 
 form button {
+    cursor: pointer;
+
     font-size: 1rem;
     font-family: 'kalnia', sans-serif;
 
@@ -61,4 +68,11 @@ form button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.2rem;
+
+    transition: ease 800ms;
+}
+
+form button:hover {
+    padding: 0.8rem, 1.4rem;
+    box-shadow: 0px 0px 1px #ff0000b2;
 }
