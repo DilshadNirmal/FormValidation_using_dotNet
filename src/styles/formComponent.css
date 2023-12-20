@@ -1,0 +1,47 @@
+div.formArea {
+    width: auto;
+
+    /* background-color: aliceblue; */
+    box-shadow: 0px 0px 2px #0c0c0c;
+
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-block: 2rem;
+}
+
+form {
+    width: 80%;
+    margin-inline: auto;
+    margin-block-start: 2rem;
+}
+
+form div {
+    margin-block: 1rem;
+
+    display: flex;
+}
+
+form label {
+    margin-right: 1rem;
+
+    font-weight: 500;
+}
+
+form label input {
+    height: 1rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+    
+    outline: none;
+    background-color: rgba(12, 12, 12, 0.10);
+}
+
+form button {
+    /* Add your styles here */
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+  }

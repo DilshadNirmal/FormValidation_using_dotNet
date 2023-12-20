@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "kalnia", system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: [full-width-start] minmax(1rem, 1fr) [breakout-start] minmax(0, 100px) [content-start] min(100% - 2rem, 60rem) [content-end] minmax(0, 100px) [breakout-end] minmax(1rem, 1fr) [full-width-end];
+}
+
+.content > * {
+    grid-column: content;
+}
+
+.breakout {
+    grid-column: breakout;
+}
+
+.full-width {
+    grid-column: full-width;
+}
+
+div.image {
+    display: grid;
+    place-content: center;
+
+    margin-block-start: 1.4rem;
+    margin-block-end: 1.2rem;
+}
+
+img {
+    width: 6rem;
+    height: auto;
+
+    image-rendering: optimizeQuality;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+    margin-block-end: 1.2rem;
+    text-align: center;
+}
+

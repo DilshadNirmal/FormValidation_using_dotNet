@@ -1,16 +1,20 @@
 ---
-const pageTitle = "Form Validation";
+import BaseLayout from "../layouts/baseLayout.astro";
+import FormComponent from "../components/formComponent";
+
+import "../styles/formComponent.css";
+
+const pageTitle = "Employment Application";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
+<BaseLayout pageTitle={pageTitle}>
+	<div class="formArea">
+		<div class="image">
+			<img src="/images/logo.svg" alt="logo">
+		</div>
 		<h1>{pageTitle}</h1>
-	</body>
-</html>
+		<FormComponent></FormComponent>
+	</div>
+</BaseLayout>
+
+		
