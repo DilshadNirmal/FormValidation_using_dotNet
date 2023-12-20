@@ -65,7 +65,7 @@ export default function MyForm() {
                   />
                 </label>
             </div>
-            <div>
+            <div className='address'>
                 <label>
                   Address:
                   <input
@@ -103,7 +103,7 @@ export default function MyForm() {
                   />
                 </label>
             </div>
-            <button type="submit">Submit</button>
+            <div className="buttonArea"><button type="submit">Submit</button></div>
           </form>
       </div>
     );

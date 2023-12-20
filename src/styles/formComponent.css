@@ -21,6 +21,10 @@ form div {
     display: flex;
 }
 
+form div.address {
+    flex-wrap: wrap;
+}
+
 form label {
     margin-right: 1rem;
 
@@ -28,6 +32,9 @@ form label {
 }
 
 form label input {
+    font-size: 1rem;
+    font-weight: 400;
+
     height: 1rem;
     padding: 1rem;
     border-radius: 0.2rem;
@@ -37,11 +44,21 @@ form label input {
     background-color: rgba(12, 12, 12, 0.10);
 }
 
+form div.buttonArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-block-start: 3rem;
+}
+
 form button {
-    /* Add your styles here */
+    font-size: 1rem;
+    font-family: 'kalnia', sans-serif;
+
     background-color: #ff0000;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.2rem;
-  }
+}
